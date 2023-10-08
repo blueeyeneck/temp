@@ -14,6 +14,7 @@
 // npm init -y (everything default)
 
 
+console.time();
 const _ = require('lodash');
 
 const items=[1,[2,[3,[5,[5,6]]]]]
@@ -22,3 +23,5 @@ const newItems=_.flattenDeep(items);
 
 console.log(items);
 console.log(newItems);
+
+console.timeEnd();
