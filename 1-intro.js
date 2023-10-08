@@ -7,3 +7,4 @@ else{
 }
 console.log(`it's my first node app`);
 console.log(`the number is ${amt}`);
+console.log('hello world');
