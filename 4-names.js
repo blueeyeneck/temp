@@ -12,6 +12,7 @@ module.exports={a,b,sayhello};
 
 function mahi(){
     console.log('mahindra');
+    console.log(__filename);
 }
 
 mahi()

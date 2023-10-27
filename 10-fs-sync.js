@@ -13,7 +13,7 @@ console.log(second);
 
 // writeFileSync('./content/third.txt',`hter is the result: ${first} and ${second}`);   // creating a new file use fs module
 
-writeFileSync('./content/third.txt',`hter is the result: ${first} and ${second} third`,{flag:'a'});   // appending a the existing file by flag object
+writeFileSync('./content/third.txt',`hter is the result: ${first} and ${second} third`,{flag:'w'});   // appending a the existing file by flag object
 
 console.log("done");
 console.log('starting next line');

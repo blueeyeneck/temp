@@ -1,5 +1,6 @@
 // commonJs, every file is module(by default)
 // modules-encapsulated code(only share minimum)
+
 const names=require("./4-names.js");
 const sayhi=require("./5-utils.js");
 const data=require("./6-alternative-flavor.js");

@@ -3,10 +3,10 @@ const http=require('http');
 // console.log(http);
 
 const server=http.createServer((req,res)=>{
-    console.log(req.url);
+    // console.log(req.url);
     // console.log(res);
     // res.write('welcome to our home page');
-        // console.log(req);
+    console.log("req.url:-",req.url);
 
     if(req.url==='/'){
         console.log('in /');
