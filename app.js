@@ -1,7 +1,16 @@
-console.log('first task');
+const { readFile,writeFile, read } = require('fs')
+const util = require('util')
+const readFilePromise = util.promisify(readFile);
+const writeFilePromise = util.promisify(writeFile);
 
-setTimeout(()=>{
-    console.log('Second task');
-},0);
-
-console.log('third task');
+const start = async()=>{
+    try{
+        const first = await readFilePromise('./content/first.txt','utf-8');
+        const second = await readFilePromise('./content/subdir/second.txt','utf-8');
+        await writeFilePromise('./content/result',`this is result ${first} ${second}`,{flag:'w'});
+        console.log(first,second);
+    }catch(err){
+        console.log(err);
+    }
+}
+start();
